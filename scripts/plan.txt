@@ -1,0 +1,15 @@
+todo:
+- write unit tests
+    - copy over unit tests for NN stuff
+    - write extra unit tests for functionality
+    - local integration test suite using docker?
+- terraform:
+    - require 1 lambda function, triggered by API gateway/http request
+    - require 2 dynamoDB storage tables:
+        - 1 authentication key store
+        - 1 table for storing the one time token cookies
+        - 1 lambda layer (built locally using docker?)
+    - Investigate how to do flask stuff using lambdas:
+        - redirect: https://medium.com/@josephmaxmorris7/simple-http-redirects-using-aws-api-gateway-aws-lambda-and-python-dca9ad7a62ad
+        - return HTML
+        - set cookie values
